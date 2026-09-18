@@ -41,7 +41,7 @@ Com o crescimento exponencial do número de leitores, este projeto surge como um
 ## 🗄️ Estrutura de Dados
 
 Os dados introduzidos no sistema bibliotecario sao armazenados em vectores e matrizes.
-* **Vetores (Arrays 1D):** Armazenamento de identificadores, títulos, autores e métricas de stock.
+* **Vetores (Arrays 1D):** Para armazenar dados de livros :IDs, títulos, autores, e quantidades de stock; dados de usuarios : IDs e nome de usuarios.
 * **Matrizes (Arrays 2D):** Mapeamento do histórico de empréstimos e relação utilizador-livro.
 
 ---
@@ -62,9 +62,21 @@ git clone [https://github.com/hguimaraes-oss/BibliotecaMaputo.git]
 ### 2. Entrar na pasta do projeto
 cd BibliotecaMaputo
 
+### 3. Compilacão do Projecto
+javac src/*.java
 
+### 4. Execucão
+java -cp src BibliotecaMaputo
 
-
+📂 Estrutura do Projeto
+SistemaBiblioteca/
+│
+├── src/
+│   ├── Main.java
+│   └── BibliotecaMaputo.java
+│
+├── README.md
+└── .gitignore
 
 
 
