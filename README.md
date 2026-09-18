@@ -63,13 +63,17 @@ git clone [https://github.com/hguimaraes-oss/BibliotecaMaputo.git]
 cd BibliotecaMaputo
 
 ### 3. Compilacão do Projecto
-javac src/*.java
+```bash
+  javac BibliotecaMaputo.java
 
 ### 4. Execucão
-java -cp src BibliotecaMaputo
+```bash
+ java BibliotecaMaputo
+
+---
 
 📂 Estrutura do Projeto
-SistemaBiblioteca/
+BibliotecaMunicipal/BibliotecaMaputo
 │
 ├── src/
 │   ├── Main.java
@@ -77,6 +81,86 @@ SistemaBiblioteca/
 │
 ├── README.md
 └── .gitignore
+
+---
+
+**🖥️ Demonstração do Menu
+Ao iniciar a aplicação, ser-lhe-á apresentado um menu interativo semelhante a este:
+
+****************************************
+Biblioteca Municipal de Maputo
+*****************************************
+Seja bem vindo ao portal da Biblioteca
+*****************************************
+1. Registro do livro
+2. Catalago de livro
+3. Pesquisar  livros
+4. Registrar Leitores 
+5. Listar os Leitores
+6. Realizar emprestimos
+7. Devolucao do livro
+8. Estatisticas
+0. Sair
+Escolhe uma das seguintes opcoes
+
+---
+
+🧪 Exemplo de Utilização
+Registo de um livro
+********************************************
+Registro de Livros
+*********************************************
+O ID do livro e :1
+Digite o Titulo do Livro
+Fisica para Cientistas e Engenheiros
+Autor
+Paul Tipler 
+Ano de Publicacao
+2009
+Quantidade 
+5
+ID do livro: 1
+Titulo: Fisica para Cientistas e Engenheiros
+Autor: Paul Tipler 
+Ano de publicacao: 2009
+Quantidade: 5
+O Livro o com ID 1foi registrado com sucesso
+
+---
+
+** Registro de Leitores**
+
+Nome do Usuario
+Milena Smith
+O ID do(a) Milena Smith e :1
+ID do Usuario: 1
+Nome do Usuario: Milena Smith
+Usuario com o ID1foi registrado com sucesso
+
+---
+
+Pesquisa de Livros
+1. Pesquisar por titulo
+2. Pesquisar por autor
+Introduza o nome do autor que pesquisa: ID do livro:1
+Titulo do livro:1
+Autor do livro:Fisica para Cientistas e Engenheiros
+Ano de Publicacao:2009
+Quantidade Disponivel:5
+
+---
+
+📌 Dependências
+O projeto não necessita de bibliotecas externas.
+
+A única dependência necessária para executar o programa é:
+
+Java Development Kit (JDK) 18+
+
+---
+
+📄 Licença
+Este projeto foi desenvolvido para fins académicos e educacionais.
 
 
 
