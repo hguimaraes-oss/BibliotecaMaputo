@@ -137,6 +137,12 @@ public class BibliotecaMaputo {
         quantidade[totalLivros]=quantidadelivro;
         totalemprestimos[totalLivros]=0; // Inicia a contagem de emprestimos
 
+        System.out.println("ID do livro: "+ id);
+        System.out.println("Titulo: "+titulo);
+        System.out.println("Autor: "+autor);
+        System.out.println("Ano de publicacao: "+ ano);
+        System.out.println("Quantidade: "+ quantidadelivro);
+
         totalLivros++;
 
         System.out.println("O Livro o com ID " + id + "foi registrado com sucesso");
@@ -248,9 +254,13 @@ public class BibliotecaMaputo {
 
         idLeitores[totalLeitores]=idusuario;
         nomeLeitores[totalLeitores]=nome;
+
+        System.out.println("ID do Usuario: "+ idusuario);
+        System.out.println("Nome do Usuario: "+ nome);
         totalLeitores++;
         System.out.println("Usuario registrado com sucesso");
     }
+    
     //5- Lista de Usuarios do Sistema da Biblioteca Municipal
     public static void listarUsuarios(){
         System.out.println("Lista de Usuarios");
