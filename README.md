@@ -55,7 +55,12 @@ Para compilar e executar este projeto, necessita de ter instalado no seu computa
 ---
 
 ## 🚀 Instalação e Execução
+### 1. Clonar o repositório
+```bash
+git clone [https://github.com/hguimaraes-oss/BibliotecaMaputo.git]
 
+### 2. Entrar na pasta do projeto
+cd BibliotecaMaputo
 
 
 
