@@ -175,68 +175,40 @@ public class BibliotecaMaputo {
 
     public static void pesquisarLivros() {
         Scanner scanner = new Scanner(System.in);
-
         if (totalLivros == 0) {
             System.out.println("Nao ha registro de livros na biblioteca");
-        } else if (totalLivros>0) {
+        } else if (totalLivros > 0) {
             System.out.println("Pesquisa de Livros");
-            System.out.println("1. Pesquisar por titulo");
-            System.out.println("2. Pesquisar por autor");
-            int escolhaopcao = scanner.nextInt();
-            switch (escolhaopcao) {
-                case 1:
-                    System.out.print("Introduza o termo de pesquisa: ");
-                    String termo1 = scanner.nextLine();
-                    boolean encontrado1 = false;
-                    for (int i = 0; i < totalLivros; i++) {
-                        boolean corresponde1 = false;
-                        if (escolhaopcao == 1) {
-                            corresponde1 = titulolivro[i].contains(termo1);
-                            if (corresponde1){
-                                System.out.println("ID do livro:"+ idLivros[i]);
-                                System.out.println("Titulo do livro:"+ idLivros[i]);
-                                System.out.println("Autor do livro:"+ titulolivro[i]);
-                                System.out.println("Ano de Publicacao:"+ anopublicacao[i]);
-                                System.out.println("Quantidade Disponivel:"+quantidade[i]);
-                                encontrado1 = true;
-                            }
-                        }
-                    }
-                    if (!encontrado1){
-                        System.out.println("Nenhum livro encontrado");
-                    }
-                    break;
-                case 2:
-                    System.out.print("Introduza o nome do autor que pesquisa: ");
-                    String termo2 = scanner.nextLine();
-                    boolean encontrado2 = false;
-                    for (int i = 0; i < totalLivros; i++) {
-                        boolean corresponde2 = false;
-                        if (escolhaopcao == 2) {
-                            corresponde2 = autorlivro[i].contains(termo2);
-                            if (corresponde2){
-                                System.out.println("ID do livro:"+ idLivros[i]);
-                                System.out.println("Titulo do livro:"+ idLivros[i]);
-                                System.out.println("Autor do livro:"+ titulolivro[i]);
-                                System.out.println("Ano de Publicacao:"+ anopublicacao[i]);
-                                System.out.println("Quantidade Disponivel:"+quantidade[i]);
-                                encontrado2 = true;
-                            }
-                        }
-                    }
-                    if (!encontrado2){
-                        System.out.println("Nenhum livro encontrado");
-                    }
-                    break;
-                default:
-                    System.out.println(" Escolha Invalida, tente novamente");
-        }
+            System.out.print("Digite o termo de pesquisa (Título ou Autor): ");
+            String termo = scanner.nextLine().toLowerCase();
+            boolean encontrado = false;
+            for (int i = 0; i < totalLivros; i++) {
+                if (titulolivro[i].toLowerCase().contains(termo) || autorlivro[i].toLowerCase().contains(termo)) {
+                    System.out.println("ID: " + idLivros[i]);
+                    System.out.println("Titulo do livro: " + titulolivro[i]);
+                    System.out.println("Autor: " + autorlivro[i]);
+                    System.out.println("Ano de Publicacao: " + anopublicacao[i]);
+                    System.out.println("Quantidade: " + quantidade[i]);
 
+                    encontrado = true;
+                }
+            }
+            if (!encontrado) {
+                System.out.println("Nenhum livro encontrado com esse termo.");
+            }
 
         }
-
-
     }
+
+
+
+
+
+
+
+
+
+        
 
     // 4-Registro de Usuario
 
