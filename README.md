@@ -15,17 +15,18 @@ Um sistema simples em linguagem **Java** baseado em consola, desenvolvido para a
 - [Licença](#-licença)
 
 ---
-
 ## 📖 Visão Geral
 
+
 Com o crescimento exponencial do número de leitores, este projeto surge como uma solução eficiente para auxiliar os bibliotecários na administração diária do acervo bibliográfico e no controlo do histórico de requisições. O sistema opera totalmente via consola e utiliza uma base de dados simulada em memória recorrendo a vectores/arrays e matrizes.
+
 
 ---
 
 ## ⚙️ Funcionalidades Principais
 
 * **📖 Registo de Livros:**
-  * Inserção de novos livros no catálogo com ID único, título, autor, ano de publicação e quantidade disponível.
+  * Inserção de novos títulos no catálogo com ID único, título, autor, ano de publicação e quantidade disponível.
 * **🔍 Consulta de Catálogo:**
   * Listagem de todos os livros registados.
   * Pesquisa rápida de livros por título ou autor.
@@ -35,7 +36,6 @@ Com o crescimento exponencial do número de leitores, este projeto surge como um
 * **📊 Estatísticas do Sistema:**
   * Identificação do livro mais emprestado.
   * Apresentação do número total de requisições efetuadas.
-
 ---
 
 ## 🗄️ Estrutura de Dados
@@ -45,7 +45,6 @@ Os dados introduzidos no sistema bibliotecario sao armazenados em vectores e mat
 * **Matrizes (Arrays 2D):** Mapeamento do histórico de empréstimos e relação utilizador-livro.
 
 ---
-
 ## 🛠️ Pré-requisitos
 
 Para compilar e executar este projeto, necessita de ter instalado no seu computador:
@@ -53,27 +52,25 @@ Para compilar e executar este projeto, necessita de ter instalado no seu computa
 * Um terminal / linha de comandos (ou uma IDE como Eclipse, IntelliJ IDEA ).
 
 ---
-
 ## 🚀 Instalação e Execução
-### 1. Clonar o repositório
-```bash
-git clone [https://github.com/hguimaraes-oss/BibliotecaMaputo.git]
+**1. Clonar Repositorio**
+'''bash
+git clone https://github.com/hguimaraes-oss/BibliotecaMaputo.git
 
-### 2. Entrar na pasta do projeto
-cd BibliotecaMaputo
+**2. Criar Pasta**
+ cd BibliotecaMaputo
 
-### 3. Compilacão do Projecto
-```bash
-  javac BibliotecaMaputo.java
+ **3. Compilacão do Projecto**
+ '''bash
+   javac BibliotecaMaputo.java
+   
+  **4. Execucão**
+  java BibliotecaMaputo
 
-### 4. Execucão
-```bash
- java BibliotecaMaputo
+  ---
+  # 📂 Estrutura do Projeto 
 
----
-
- 📂 Estrutura do Projeto 
-BibliotecaMunicipal/BibliotecaMaputo
+  BibliotecaMunicipal/BibliotecaMaputo
 │
 ├── src/
 │   ├── Main.java
@@ -84,7 +81,7 @@ BibliotecaMunicipal/BibliotecaMaputo
 
 ---
 
-**🖥️ Demonstração do Menu
+# 🖥️ Demonstração do Menu
 Ao iniciar a aplicação, ser-lhe-á apresentado um menu interativo semelhante a este:
 
 ****************************************
@@ -105,8 +102,8 @@ Escolhe uma das seguintes opcoes
 
 ---
 
-🧪 Exemplo de Utilização
-Registo de um livro
+# 🧪 Exemplo de Utilização
+**Registo de um livro**
 ********************************************
 Registro de Livros
 *********************************************
@@ -126,9 +123,7 @@ Ano de publicacao: 2009
 Quantidade: 5
 O Livro o com ID 1foi registrado com sucesso
 
----
-
-** Registro de Leitores**
+**Registro de Leitores**
 
 Nome do Usuario
 Milena Smith
@@ -137,9 +132,7 @@ ID do Usuario: 1
 Nome do Usuario: Milena Smith
 Usuario com o ID1foi registrado com sucesso
 
----
-
-Pesquisa de Livros
+**Pesquisa de Livros**
 1. Pesquisar por titulo
 2. Pesquisar por autor
 Introduza o nome do autor que pesquisa: ID do livro:1
@@ -150,7 +143,7 @@ Quantidade Disponivel:5
 
 ---
 
-📌 Dependências
+# 📌 Dependências
 O projeto não necessita de bibliotecas externas.
 
 A única dependência necessária para executar o programa é:
@@ -159,10 +152,17 @@ Java Development Kit (JDK) 18+
 
 ---
 
-📄 Licença
+# 📄 Licença
+
 Este projeto foi desenvolvido para fins académicos e educacionais.
 
 
+
+
+
+  
+ 
+ 
 
 <h1 align="center">Ola 👋, Eu sou a Helena Milena Guimaraes</h1>
 <h3 align="center">Estudante de Engenharia Informatica na UnISCED</h3>
