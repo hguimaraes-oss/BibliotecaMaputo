@@ -164,8 +164,8 @@ public class BibliotecaMaputo {
             System.out.println("Titulo" + titulolivro[i]);
             System.out.println("Autor" + autorlivro[i]);
             System.out.println("Ano de Publicacao" + anopublicacao[i]);
-            System.out.println("Quantidade disponivel" + quantidade);
-            System.out.println("Total de emprestimos" + totalemprestimos);
+            System.out.println("Quantidade disponivel" + quantidade[i]);
+            System.out.println("Total de emprestimos" + totalemprestimos[i]);
 
 
         }
