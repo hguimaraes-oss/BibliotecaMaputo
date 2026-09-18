@@ -18,14 +18,14 @@ Um sistema simples em linguagem **Java** baseado em consola, desenvolvido para a
 
 ## 📖 Visão Geral
 
-Com o crescimento exponencial do número de leitores, este projeto surge como uma solução leve e eficiente para auxiliar os bibliotecários na administração diária do acervo e no controlo do histórico de requisições. O sistema opera totalmente via consola e utiliza uma base de dados simulada em memória.
+Com o crescimento exponencial do número de leitores, este projeto surge como uma solução eficiente para auxiliar os bibliotecários na administração diária do acervo bibliográfico e no controlo do histórico de requisições. O sistema opera totalmente via consola e utiliza uma base de dados simulada em memória recorrendo a vectores/arrays e matrizes.
 
 ---
 
 ## ⚙️ Funcionalidades Principais
 
 * **📖 Registo de Livros:**
-  * Inserção de novos títulos no catálogo com ID único, título, autor, ano de publicação e quantidade disponível.
+  * Inserção de novos livros no catálogo com ID único, título, autor, ano de publicação e quantidade disponível.
 * **🔍 Consulta de Catálogo:**
   * Listagem de todos os livros registados.
   * Pesquisa rápida de livros por título ou autor.
@@ -40,7 +40,7 @@ Com o crescimento exponencial do número de leitores, este projeto surge como um
 
 ## 🗄️ Estrutura de Dados
 
-De acordo com os requisitos do projeto, o sistema não utiliza bases de dados externas. Toda a persistência em tempo de execução é simulada em memória através de:
+Os dados introduzidos no sistema bibliotecario sao armazenados em vectores e matrizes.
 * **Vetores (Arrays 1D):** Armazenamento de identificadores, títulos, autores e métricas de stock.
 * **Matrizes (Arrays 2D):** Mapeamento do histórico de empréstimos e relação utilizador-livro.
 
@@ -49,8 +49,8 @@ De acordo com os requisitos do projeto, o sistema não utiliza bases de dados ex
 ## 🛠️ Pré-requisitos
 
 Para compilar e executar este projeto, necessita de ter instalado no seu computador:
-* **Java Development Kit (JDK):** Versão 8 ou superior.
-* Um terminal / linha de comandos (ou uma IDE como Eclipse, IntelliJ IDEA ou NetBeans).
+* **Java Development Kit (JDK):** Versão 18 ou superior.
+* Um terminal / linha de comandos (ou uma IDE como Eclipse, IntelliJ IDEA ).
 
 ---
 
