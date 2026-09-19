@@ -111,37 +111,68 @@ Registro de Livros
 *********************************************
 O ID do livro e :1
 Digite o Titulo do Livro
-Fisica para Cientistas e Engenheiros
+Os Lusiadas
 Autor
-Paul Tipler 
+Luis Vaz de Camoes
 Ano de Publicacao
-2009
+1572
 Quantidade 
 5
 ID do livro: 1
-Titulo: Fisica para Cientistas e Engenheiros
-Autor: Paul Tipler 
-Ano de publicacao: 2009
+Titulo: Os Lusiadas
+Autor: Luis Vaz de Camoes 
+Ano de publicacao: 1572
 Quantidade: 5
-O Livro o com ID 1foi registrado com sucesso
+O Livro o com ID 1 foi registrado com sucesso
 
 **Registro de Leitores**
 
 Nome do Usuario
-Milena Smith
+Helena Milena
 O ID do(a) Milena Smith e :1
 ID do Usuario: 1
-Nome do Usuario: Milena Smith
-Usuario com o ID1foi registrado com sucesso
+Nome do Usuario: Helena Milena 
+Usuario com o nome Helena Milena e ID 1 foi registrado com sucesso
 
 **Pesquisa de Livros**
-1. Pesquisar por titulo
-2. Pesquisar por autor
-Introduza o nome do autor que pesquisa: ID do livro:1
-Titulo do livro:1
-Autor do livro:Fisica para Cientistas e Engenheiros
-Ano de Publicacao:2009
-Quantidade Disponivel:5
+Escolhe uma das seguintes opcoes 
+3
+Pesquisa de Livros
+Digite o termo de pesquisa (Título ou Autor): Tipler
+ID: 2
+Titulo do livro: Fisica para Cientistas e Engenheiros
+Autor: Paul Tipler 
+Ano de Publicacao: 2009
+Quantidade: 10
+
+Escolhe uma das seguintes opcoes 
+3
+Pesquisa de Livros
+Digite o termo de pesquisa (Título ou Autor): Lusiadas
+ID: 1
+Titulo do livro: Os Lusiadas
+Autor: Luis Vaz de Camoes 
+Ano de Publicacao: 1572
+Quantidade: 5
+
+
+**Emprestimos**
+Escolhe uma das seguintes opcoes 
+6
+Emprestimo de Livro
+Digite o ID do livro que pretende requisitar
+1
+ID do Usuario
+1
+Detalhes do livro
+ID: 1
+Titulo do livro: Os Lusiadas
+Nome do autor: Luis Vaz de Camoes 
+Ano de publicacao: 1572
+A quantidade de livro remanescente e: 4
+**************************************************
+Emprestimo efetuado com sucesso para: Helena Milena!
+
 
 ---
 
