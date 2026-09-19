@@ -97,7 +97,9 @@ Seja bem vindo ao portal da Biblioteca
 6. Realizar emprestimos
 7. Devolucao do livro
 8. Estatisticas
-0. Sair
+   
+0 Sair
+   
 Escolhe uma das seguintes opcoes
 
 ---
