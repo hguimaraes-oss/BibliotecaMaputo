@@ -147,7 +147,6 @@ public class BibliotecaMaputo {
 
         System.out.println("O Livro o com ID " + id + "foi registrado com sucesso");
 
-
     }
 
     // 2-Lista dos Livros no Sistema
@@ -166,7 +165,6 @@ public class BibliotecaMaputo {
             System.out.println("Ano de Publicacao" + anopublicacao[i]);
             System.out.println("Quantidade disponivel" + quantidade[i]);
             System.out.println("Total de emprestimos" + totalemprestimos[i]);
-
 
         }
     }
@@ -200,16 +198,6 @@ public class BibliotecaMaputo {
         }
     }
 
-
-
-
-
-
-
-
-
-        
-
     // 4-Registro de Usuario
 
     public static void registroUsuario(){
@@ -230,7 +218,8 @@ public class BibliotecaMaputo {
         System.out.println("ID do Usuario: "+ idusuario);
         System.out.println("Nome do Usuario: "+ nome);
         totalLeitores++;
-        System.out.println("Usuario registrado com sucesso");
+        System.out.println("Usuario com o nome"+ nome + " e ID "+ idusuario+ "foi registrado com sucesso");
+        
     }
     
     //5- Lista de Usuarios do Sistema da Biblioteca Municipal
@@ -247,7 +236,7 @@ public class BibliotecaMaputo {
 
    //6- Realizar Emprestimos do livros da Biblioteca
 
-    public static void realizarEmprestimos(){
+      public static void realizarEmprestimos(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Emprestimo de Livro");
         if(totalLivros == 0){
@@ -273,7 +262,7 @@ public class BibliotecaMaputo {
 
          }
 
-        System.out.println("ID do Usuario");
+          System.out.println("ID do Usuario");
          int idusuario = scanner.nextInt();
          int indiceusuario = idusuario-1;
 
@@ -286,34 +275,57 @@ public class BibliotecaMaputo {
          historicoEmprestimos[totalEmprestimos][1]=idusuario;
          historicoEmprestimos[totalEmprestimos][2] =1;// O numero 1 denota que o emprestimo do livro esta ativado
 
+        // Inventario de emprestimos
+
+         quantidade[indicelivro]--;
+         totalemprestimos[indicelivro]++;
+         totalEmprestimos++;
+
+        System.out.println("Detalhes do livro");
+        System.out.println("ID: " + idlivro);
+        System.out.println("Titulo do livro: " + titulolivro[indicelivro]);
+        System.out.println("Nome do autor: " + autorlivro[indicelivro]);
+        System.out.println("Ano de publicacao: " + anopublicacao[indicelivro]);
+        System.out.println("A quantidade de livro remanescente e: "+ quantidade[indicelivro]);
+        System.out.println("**************************************************");
+        System.out.println("Emprestimo efetuado com sucesso para: "+ nomeLeitores[indiceusuario]+"!");
+
     }
 
     // 7- Devolucao do livro da Biblioteca
-
-    public static void devolucaoLivro() {
+      public static void devolucaoLivro() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Digite o ID do livro que pretende devolver");
         int id = scanner.nextInt();
+        int indicelivro = id - 1;
         System.out.println("Digite o ID do Usuario");
         int idusuario = scanner.nextInt();
+        int indiceusuario = idusuario - 1;
         boolean encontrado = false;
         for (int i = 0; i < totalEmprestimos; i++) {
             if (historicoEmprestimos[i][0] == id && historicoEmprestimos[i][1] == idusuario && historicoEmprestimos[i][2] == 1) {
                 historicoEmprestimos[i][2] = 0; // Denota que o livro foi devolvido
-                quantidade[id - 1]++; // Indica a devolucao do livro, ou seja, o acrescimo de estoque
+                quantidade[indicelivro]++;// Indica a devolucao do livro, ou seja, o acrescimo de estoque
+                totalemprestimos[indicelivro]--;
+                totalEmprestimos--;
                 encontrado = true;
-                System.out.println("Devolucao registrada com sucesso");
+
+                System.out.println("O livro a ser devolvido e: ");
+                System.out.println("Titulo: " + titulolivro[indicelivro]);
+                System.out.println("Autor: " + autorlivro[indicelivro]);
+                System.out.println("Ano de Publicacao: " + anopublicacao[indicelivro]);
+                System.out.println("A quantidade do livros apos a devolucao e :" + quantidade[indicelivro]);
+                System.out.println("*****************************************************************************************************");
+                System.out.println("O Usuario com ID: " + idusuario + " de nome" + nomeLeitores[indiceusuario] + "devolveu o livro com sucesso");
                 break;
 
             }
-            if (!encontrado) {
-                System.out.println("Erro: Nenhum emprestimo ativo encontrado com esses dados");
-            }
-        }
 
+        }
     }
+
       // Estatisticas para determinar o livro mais requisitado na Biblioteca
-        public static void estatisticasLivro(){
+     public static void estatisticasLivro(){
 
         if(totalLivros==0){
             System.out.println("Nao ha registro de livros para Estatistica");
@@ -321,18 +333,18 @@ public class BibliotecaMaputo {
 
         int totalrequisitados =0;
         int indicemaisemprestado=0;
-        int mairquantidade =-1;
+        int maior =0;
         for(int i =0; i<totalLivros;i++){
             totalrequisitados+= totalemprestimos[i];
-            if (totalemprestimos[i]>mairquantidade){
-                mairquantidade = totalemprestimos[i];
+            if (totalemprestimos[i]> maior){
+                maior = totalemprestimos[i];
                 indicemaisemprestado =i;
 
             }
         }
-            System.out.println("O total de emprestimos efetuados e: "+ totalrequisitados);
-        if (mairquantidade>0){
-            System.out.println("Livro mais emprestado:"+ titulolivro[indicemaisemprestado] + "(Requisitado"+ mairquantidade+ "vezes)" );
+         System.out.println("O total de emprestimos efetuados e: "+ totalrequisitados);
+        if (maior >0){
+            System.out.println("Livro mais emprestado: "+ titulolivro[indicemaisemprestado] + "(Requisitado : "+ maior + "vezes)" );
 
         } else {
             System.out.println("Nenhum livro foi emprestado ate ao momento");
@@ -340,7 +352,7 @@ public class BibliotecaMaputo {
 
     }
 
-
+  
 
 }
 
