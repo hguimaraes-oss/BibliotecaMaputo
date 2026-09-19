@@ -173,6 +173,21 @@ A quantidade de livro remanescente e: 4
 **************************************************
 Emprestimo efetuado com sucesso para: Helena Milena!
 
+**Devolucao de livro**
+Escolhe uma das seguintes opcoes 
+7
+Digite o ID do livro que pretende devolver
+1
+Digite o ID do Usuario
+1
+O livro a ser devolvido e: 
+Titulo: Os Lusiadas
+Autor: Luis Vaz de Camoes 
+Ano de Publicacao: 1572
+A quantidade do livros apos a devolucao e :5
+*****************************************************************************************************
+O Usuario com ID: 1 de nomeHelena Milenadevolveu o livro com sucesso
+
 
 ---
 
