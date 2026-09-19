@@ -129,7 +129,7 @@ O Livro o com ID 1 foi registrado com sucesso
 
 Nome do Usuario
 Helena Milena
-O ID do(a) Milena Smith e :1
+O ID do(a) Helena Milena e :1
 ID do Usuario: 1
 Nome do Usuario: Helena Milena 
 Usuario com o nome Helena Milena e ID 1 foi registrado com sucesso
